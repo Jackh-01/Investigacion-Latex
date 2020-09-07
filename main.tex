@@ -1,22 +1,30 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
+\usepackage{fancyhdr, graphicx, parskip}
 \usepackage[spanish]{babel}
 \usepackage{listings}
 \usepackage{graphicx}
-\graphicspath{ {images/} }
+\graphicspath{ {images} }
 \usepackage{cite}
+\usepackage [colorlinks = true, 
+            linkcolor = blue,
+            citecolor = black,
+            urlcolor = blue]{hyperref}
+            
 
 \begin{document}
-
 \begin{titlepage}
+\renewcommand{\headrulewidth}{3pt}
+\fancyhead[L]{}
+\fancyhead[R]{}
+    \includegraphics[width=4cm]{imagen.png}
     \begin{center}
         \vspace*{1cm} 
             
         \Huge
         \textbf{Notacion de la memoria del computador}
             
-        \vspace{0.5
-
+        \vspace{0.8 cm
 }
         
         \LARGE
@@ -38,13 +46,22 @@
             
     \end{center}
 \end{titlepage}
+\thispagestyle{fancy}
 
 \tableofcontents
 
-\section{Sección introductoria}
+\section{Introducción}
+se denomina elemento de memoria a cualquier dispositivo que tenga la capacidad de "recordar" información almacenada en el mismo durante un intervalo de tiempo relativamente grande. El elemento básico de información es aquel cuya capacidad es la de recordar un bit información, es decir almacenar un cero o un uno, hasta tanto esa información sea modificada desde el exterior.
+
+Volátiles: se denominan así a aquellas en que su contenido permanece mientras exista tensión que las alimente, la desaparición de la tensión produce la pérdida completa y definitiva de la información almacenada. A este grupo pertenecen las memorias denominadas RAM.
+
+No volátiles: son aquellas en que no se pierde la información incluso cunado desaparezca la tensión de alimentación lo cual significa que si volvemos a alimentar el sistema la información será la misma antes de que se desconectará la tensión y se le denomina ROM.
+
+
+\section{Defina que es la memoria del computador.}
 Esta es la primera sección, podemos agregar algunos elementos adicionales y todo será escrito correctamente. Más aún, si una palabra es demasiado larga y tiene que ser truncada, babel tratará de truncarla correctamente dependiendo del idioma.
 
-\section{Sección de contenido} \label{contenido}
+\section{Mencione los tipos de memoria que conozco.} \label{contenido}
 
 Esta sección es para ver qué pasa con los comandos 
 que definen texto
@@ -53,6 +70,13 @@ El paquete también agrega un comportamiento especial
 a <<estas marcas para hacer citas textuales>> tal como 
 lo indican las reglas de la RAE. \cite{dirac}
 
+
+\section{Describa la manera como se gestiona la memoria en un computador.}
+
+en esta seccion se hablara respecto a la memoria del computador 
+
+
+\section{¿Qué hace que una memoria sea más rápida que otra?}
 \begin{lstlisting}
 #include <stdio.h>
 #define N 10
