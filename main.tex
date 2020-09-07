@@ -49,7 +49,7 @@
 \thispagestyle{fancy}
 
 \tableofcontents
-
+ 
 \section{Introducción}
 se denomina elemento de memoria a cualquier dispositivo que tenga la capacidad de "recordar" información almacenada en el mismo durante un intervalo de tiempo relativamente grande. El elemento básico de información es aquel cuya capacidad es la de recordar un bit información, es decir almacenar un cero o un uno, hasta tanto esa información sea modificada desde el exterior.
 
@@ -75,33 +75,27 @@ tienen una integrada en su placa madre ya que sin ella la información quedaría
 \section{Describa la manera como se gestiona la memoria en un computador.}
 
 La gestión de la memoria se hace a través de un microcontrolador que interviene en cada operación y mide la velocidad con la que se transporta la información la cual mide en MHz. El controlados se puede encontrar en una de estas dos partes:
+\begin{itemize}
+\item{ Un chip situado en la tarjeta madre entre los módulos de memoria y la CPU}
+\end{itemize}
 
-• Un chip situado en la tarjeta madre entre los módulos de memoria y la CPU
-• Dentro del microprocesador Este microcontrolador se puede denominar como MCH (Memory Controller Hub o en español, Centro de Control de Memoria).
-
+\begin{itemize}
+\item{ Dentro del microprocesador Este microcontrolador se puede denominar como MCH (Memory Controller Hub o en español, Centro de Control de Memoria).}
+\end{itemize}
 
 \section{¿Qué hace que una memoria sea más rápida que otra?}
+El disco duro es clave en la velocidad del Disco Duro Cuando se piensa en la capacidad de almacenamiento de un computador, lo primero que viene a la mente es el disco duro. Cuando se piensa en la velocidad del computador, en cambio, lo primero en que se piensa es en el procesador o en la memoria RAM. Es por esto que en el momento de hacer que un computador sea más rápido, lo primero que se suele hacer es ‘aumentar la RAM’. Sin em­bargo, el principal factor que influye en la velocidad de un computador es, paradójicamente, el disco duro. La razón está en la mecánica de funcionamiento.
+\subsection{¿Por qué esto es importante?}
+La velocidad determina la rapidez a la que puede trabajar una memoria y
+afecta junto a su bus de datos, su ancho de banda una mayor velocidad es necesaria dado que para realizar tareas importantes uno necesita un rendimiento mejor y que se haga con una buena velocidad ya que las operaciones de almacenar, borrar y re almacenar nueva informacióon y datos se hará mucho más rápidamente lo que puede marcar la diferencia en su rendimiento
+
+
+
+\section{Conclusión} \label{conclulsion}
+Las memorias se definen por su similaridad con almacenes internos en el ordenador. El término memoria identifica el almacenaje de datos que viene en forma chips, y el almacenaje de la palabra se utiliza para la memoria que existe en las cintas o los discos. Por otra parte, el término memoria se utiliza generalmente como taquigrafía para la memoria física, que refiere a los chips reales capaces de llevar a cabo datos. Algunos ordenadores también utilizan la memoria virtual, que amplía memoria física sobre un disco duro
+
 \begin{lstlisting}
 
-#include <stdio.h>
-#define N 10
-/* Block
- * comment */
-
-int main()
-{
-    int i;
-
-    // Line comment.
-    puts("Hello world!");
-    
-    for (i = 0; i < N; i++)
-    {
-        puts("LaTeX is also great for programmers!");
-    }
-
-    return 0;
-}
 \end{lstlisting}
 
 A continuación se presenta el logo de C++ Figura (\ref{fig:cpplogo})
@@ -115,7 +109,7 @@ A continuación se presenta el logo de C++ Figura (\ref{fig:cpplogo})
 
 En la sección de teoremas (\ref{contenido})
 
-\section{Conclusión} \label{conclulsion}
+
 
 \bibliographystyle{IEEEtran} 
 \bibliography{references}
